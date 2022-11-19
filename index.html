@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon</title>
+  <!-- AGREGAMOS FAVICON (HACERLO AL FINAL DE LA CLASE) -->
+  <link rel="icon" sizes="180x180" href="./assets/img/favicons/icon.png" />
+  <link rel="icon" type="image/png" sizes="180x180" href="./assets/img/favicons/icon.png" />
+  <!-- AGREGAMOS PSEUDOELEMENTOS.CSS -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/mediaqueries.css" />
+  <link rel="stylesheet" href="./assets/animaciones.css" />
+  <!-- AGREGAMOS CDN DE FONT-AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <img src="./assets/img/logo.png" alt="logo" class="logo" />
+    <nav class="navbar">
+      <div class="menu-label">
+        <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+      </div>
+
+      <ul class="navbar-list">
+        <li><a class="navbar-link" href="#hero">Home</a></li>
+        <li><a class="navbar-link" href="#discover">Why?</a></li>
+        <li><a class="navbar-link" href="#info">Exploration</a></li>
+        <li><a class="navbar-link" href="#products">Buy tickets</a></li>
+      </ul>
+
+      <div class="cart-label">
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+      </div>
+
+      <div class="cart">
+        <h2>Tu viaje</h2>
+
+        <div class="cart-container"></div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total">0.00 BTC</span>
+        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-delete">Vaciar carrito</button>
+      </div>
+
+      <div class="overlay"></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-info">
+        <h1>Explore the moon</h1>
+        <p>
+          Since childhood, many have dreamed of seeing the lunar surface more closely, wishing to become astronauts to explore the beautiful and mysterious outer space. Here we make your dream come true, come and meet the moon with us.
+        </p>
+        <a href="#products">¡Go!</a>
+      </div>
+      <div class="hero-img">
+        <img src="./assets/img/moon.png" alt="moon" />
+        </div>
+      </div>
+    </section>
+    <!-- discover -->
+    <section id="discover">
+      <div class="discover-cards">
+        <div class="discover-text">
+          <h2>Why explore the moon?</h2>
+          <p>
+            You will have the opportunity to visit one of the tourist destinations of the moment for as long as you want. Travel with us and don't worry about a thing, we take care of everything and make sure it's one of your best experiences.
+            On this page you can buy your ticket and we will contact you to provide you with all the information you need, all purchases are made in BTC, in any case you can contact us and we will help you with your purchase.
+          </p>
+          <li><a href="#products">Messi</a></li>
+        </div>
+      </div>
+    </section>
+    <!-- info -->
+    <section id="info">
+      <h2>The process of travel</h2>
+      <div class="info-cards-container">
+        <div class="info-card">
+          <img src="./assets/img/info//moon-1.png" alt="Icono NFTs" />
+          <h3>Routine studies</h3>
+          <p>
+            In order to live this wonderful experience, we will carry out routine studies to guarantee your physical and mental well-being on the moon.
+          </p>
+        </div>
+        <div class="info-card">
+          <img src="./assets/img/info/moon-2.png" alt="Icono NFTs" />
+          <h3>Boarding</h3>
+          <p>
+            A few days before boarding you will stay with us in the starcity where we will do some basics and mandatory preparation training.
+          </p>
+        </div>
+        <div class="info-card">
+          <img src="./assets/img/info/moon-3.png" alt="Icono NFTs" />
+          <h3>Traveling</h3>
+          <p>
+            During the trip we will make sure that you feel comfortable at all times and that you can enjoy yourself to the fullest with us.
+          </p>
+        </div>
+        <div class="info-card">
+          <img src="./assets/img/info/moon-4.png" alt="Icono NFTs" />
+          <h3>Arrival</h3>
+          <p>
+            As soon as we arrive at your destination, we will place you in the designated home and you will be able to enjoy all the services. We will be there at all times to help you with whatever you need.
+          </p>
+        </div>
+      </div>
+    </section>
+<!-- products -->
+    <section id="products">
+      <h2>Available trips</h2>
+      
+      <div class="categories">
+        <button class="category active">Everybody</button>
+        <button class="category" data-category="weekend">Weekend</button>
+        <button class="category" data-category="weekly">Weekly</button>
+        <button class="category" data-category="monthly">
+          Mensuales
+        </button>
+      </div>
+      
+      <div class="products-container"></div>
+      <button class="btn-load">Ver Más</button>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <ul class="footer-links">
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Frequent questions</a></li>
+      </ul>
+    </div>
+    <p>made with ❤️ from <span> Space</span></p>
+  </footer>
+  <div class="add-modal"></div>
+  <script src="./assets/data.js"></script>
+  <script src="./assets/index.js"></script>
+</body>
+
+</html>
