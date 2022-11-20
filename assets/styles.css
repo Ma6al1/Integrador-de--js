@@ -24,6 +24,12 @@
   list-style-type: none;
 }
 
+body {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*header*/
 
 .hero-img {
@@ -31,7 +37,7 @@
 }
 
 header {
-  background: linear-gradient(to bottom, #121e3c, var(--background));
+  background: linear-gradient(to bottom, #091021, var(--background));
   width: 100%;
   position: fixed;
   top: 0;
@@ -238,7 +244,7 @@ header {
 
 /*main*/
 main {
-  background: var(--background);
+/*   background: var(--background); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,8 +501,8 @@ main {
 
 .feature p {
   font-size:smaller;
-  width: 80%;
-  padding-left: 30px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .product-top h3 {
